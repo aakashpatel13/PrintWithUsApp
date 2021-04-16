@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="20dp"
+    android:background="@drawable/sitebg"
+    >
+
+    <LinearLayout
+        android:id="@+id/home_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+       >
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white_greyish" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="600dp"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp">
+
+
+            <ImageView
+                android:id="@+id/homeimg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/home"
+                android:padding="3dp"
+                android:textColor="#009688"
+                android:textStyle="bold"
+                android:tooltipText="Home" />
+
+            <ImageView
+                android:id="@+id/listProduct"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/listproduct"
+                android:padding="3dp"
+                android:textColor="#009688"
+                android:textStyle="bold"
+                android:tooltipText="List Of Products" />
+
+            <ImageView
+                android:id="@+id/contactimg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/contact"
+                android:padding="3dp"
+                android:textColor="#009688"
+                android:textStyle="bold"
+                android:tooltipText="Contact US" />
+
+            <ImageView
+                android:id="@+id/aboutusimg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/aboutus"
+                android:padding="3dp"
+                android:textColor="#009688"
+                android:textStyle="bold"
+                android:tooltipText="About US" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textSize="20dp"
+        android:text="Home Page"
+        android:textColor="#FFFF"
+        android:gravity="center"
+        android:layout_above="@+id/homestart"/>
+
+    <ImageView
+        android:id="@+id/homestart"
+        android:layout_width="361dp"
+        android:layout_height="239dp"
+        android:background="@drawable/bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/white_greyish"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hometext"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textSize="20dp"
+        android:textColor="#FFFF"
+        android:gravity="center"
+        android:text="As we work with you to find new ways to turn today’s challenges into opportunities, we also wanted take time to show you how much we appreciate you and the spirit that drives you."
+        android:layout_below="@+id/homestart"/>
+    <WebView
+        android:id="@+id/webview_y"
+        android:layout_width="1000dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/hometext"
+        />
+
+
+</RelativeLayout>
